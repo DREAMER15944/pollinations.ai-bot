@@ -52,7 +52,8 @@ class PollinationsBot(commands.Bot):
         intents.message_content = True
         
         super().__init__(command_prefix="!", intents=intents
-    ) self.synced = False
+        ) 
+        self.synced = False
 
     @tasks.loop(minutes=5)
     async def change_status(self):
