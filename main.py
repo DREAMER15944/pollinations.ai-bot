@@ -97,7 +97,7 @@ async def on_message(message):
     if bot.user in message.mentions:
         if message.type is not discord.MessageType.reply:
             embed = discord.Embed(
-                description="Hello, I am the Pollinations.ai Bot. I am here to help you with your AI needs. Type `!help` or click </help:1187383172992872509> to get started.",
+                description="Hello, I am TezzaAI. I am here to help you with your AI needs. Type `!help` or click </help:1187383172992872509> to get started.",
                 color=discord.Color.og_blurple(),
             )
 
@@ -208,7 +208,7 @@ async def help(ctx):
 async def invite(ctx):
     embed = discord.Embed(
         title="Invite the bot to your server",
-        url="https://discord.com/api/oauth2/authorize?client_id=1123551005993357342&permissions=534791060544&scope=bot%20applications.commands",
+        url="https://discord.com/api/oauth2/authorize?client_id=908949040400576573&permissions=534791060544&scope=bot%20applications.commands",
         description="Click the link above to invite the bot to your server",
         color=discord.Color.og_blurple(),
     )
@@ -227,9 +227,9 @@ async def about(ctx):
     profilePicture = user.avatar.url
 
     embed = discord.Embed(
-        title="Pollinations.ai Bot",
+        title=" Tezza.ai Bot",
         url="https://pollinations.ai/",
-        description="I am the official Pollinations.ai Bot. I can generate AI Images from your prompts ✨.",
+        description="I am the official Tezza.ai Bot. I can generate AI Images from your prompts ✨.",
         color=discord.Color.og_blurple(),
     )
 
@@ -237,8 +237,8 @@ async def about(ctx):
 
     embed.set_thumbnail(url=profilePicture)
     embed.add_field(
-        name=f"What is Pollinations.ai? 🌸",
-        value="Pollinations.ai is a platform for creating AI-generated images completely for free. We have a growing collection of AI models that you can use to generate images.",
+        name=f"What is Tezza.ai? 🌸",
+        value="Tezza.ai is a platform for creating AI-generated images completely for free. We have a growing collection of AI models that you can use to generate images.",
         inline=False,
     )
     embed.add_field(
@@ -253,12 +253,12 @@ async def about(ctx):
     )
     embed.add_field(
         name="How do I report a bug? 🪲",
-        value="You can report a bug by joining our [Discord Server](https://discord.gg/SFasNG4n6b).",
+        value="You can report a bug by joining our [Discord Server](https://discord.gg/YYXRp8XEPy).",
         inline=False,
     )
     embed.add_field(
         name=f"How do I contribute to this project? {str(github_emoji)}",
-        value="This project is open source. You can contribute to this project by visiting our [GitHub Repository](https://github.com/zingzy/pollinations.ai-bot).",
+        value="This project is open source. You can contribute to this project by visiting our [GitHub Repository](https://github.com/bot).",
         inline=False,
     )
 
