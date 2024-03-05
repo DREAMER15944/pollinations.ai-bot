@@ -48,7 +48,7 @@ commands_ = {
 
 class pollinationsBot(commands.Bot):
     def __init__(self):
-        super().__init__( intents = discord.Intents.default()
+        super().__init__( intents = discord.Intents.default(),
 intents.message_content = True
 bot = Bot(commands_prefix="!", intents=intents))
   
