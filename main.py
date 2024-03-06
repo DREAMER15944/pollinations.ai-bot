@@ -184,7 +184,7 @@ async def ping(ctx):
 @bot.hybrid_command(name="help", description="View the various commands of this server")
 async def help(ctx):
     user = bot.get_user(1123551005993357342)
-    profilePicture = user.avatar.url
+    profilePicture = user.avatar.url if user.avatar else discord.Embed.Empty
 
     embed = discord.Embed(
         title="Pollinations.ai Bot Commands",
@@ -225,7 +225,7 @@ async def invite(ctx):
 @bot.hybrid_command(name="about", description="About the bot")
 async def about(ctx):
     user = bot.get_user(1123551005993357342)
-    profilePicture = user.avatar.url
+    profilePicture = user.avatar.url if user.avatar else discord.Embed.Empty
 
     embed = discord.Embed(
         title=" Tezza.ai Bot",
