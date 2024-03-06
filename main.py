@@ -187,7 +187,7 @@ async def help(ctx):
     profilePicture = user.avatar.url if user.avatar else discord.Embed.Empty
 
     embed = discord.Embed(
-        title="Pollinations.ai Bot Commands",
+        title="Tezza.ai Bot Commands",
         url=APP_URI,
         description="Here is the list of the available commands:",
         color=discord.Color.og_blurple(),
@@ -229,7 +229,7 @@ async def about(ctx):
 
     embed = discord.Embed(
         title=" Tezza.ai Bot",
-        url="https://pollinations.ai/",
+        url="https://discord.gg/aM5TReM4zx",
         description="I am the official Tezza.ai Bot. I can generate AI Images from your prompts ✨.",
         color=discord.Color.og_blurple(),
     )
@@ -257,11 +257,7 @@ async def about(ctx):
         value="You can report a bug by joining our [Discord Server](https://discord.gg/YYXRp8XEPy).",
         inline=False,
     )
-    embed.add_field(
-        name=f"How do I contribute to this project? {str(github_emoji)}",
-        value="This project is open source. You can contribute to this project by visiting our [GitHub Repository](https://github.com/bot).",
-        inline=False,
-    )
+  
 
     embed.set_footer(
         text="Information requested by: {}".format(ctx.author.name),
