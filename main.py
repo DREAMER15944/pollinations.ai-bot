@@ -183,7 +183,7 @@ async def ping(ctx):
 
 @bot.hybrid_command(name="help", description="View the various commands of this server")
 async def help(ctx):
-    user = bot.get_user(1123551005993357342)
+    user = bot.get_user(908949040400576573)
     profilePicture = user.avatar.url if user.avatar else discord.Embed.Empty
 
     embed = discord.Embed(
@@ -224,7 +224,7 @@ async def invite(ctx):
 
 @bot.hybrid_command(name="about", description="About the bot")
 async def about(ctx):
-    user = bot.get_user(1123551005993357342)
+    user = bot.get_user(908949040400576573)
     profilePicture = user.avatar.url if user.avatar else discord.Embed.Empty
 
     embed = discord.Embed(
